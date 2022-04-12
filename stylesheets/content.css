@@ -1,0 +1,352 @@
+/**
+ * http://applemusic.tumblr.com/
+ */
+
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+* {
+    font-family: "San Francisco"
+}
+
+
+h1 { font-weight: 700; }
+h2 { font-weight: 600; }
+h3 { font-weight: 500; }
+p { font-weight: 400; }
+p.thin { font-weight: 200; }
+p.ultralight { font-weight: 100; }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}   /* 💻 https://developer.mozilla.org/ru/docs/Web/CSS/:focus */
+/* убираем браузерную обводку у кнопок */
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+form > p,
+form > span,
+form > h3 {
+  display: block;
+  width: 460px;
+  position: relative;
+  margin: 10px auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+  display: block;
+  width: 460px;
+  position: relative;
+  margin: 10px auto;
+  height: 46px;
+  padding: 0 18px;
+  font-size: 17px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+
+hr {
+  width: 1100px;
+  display: block;
+  margin: 15px auto;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  background-color: #0070c9;
+  background: linear-gradient(#42a1ec,#0070c9);
+  border: 1px solid #07c;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  min-width: 30px;
+  padding: 4px 15px;
+  text-align: center;
+  white-space: nowrap;
+  margin: 15px auto;
+}
+
+
+nav {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 46px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+nav > div {
+  width: 1024px;
+  display: block;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+
+}
+.form-split {
+  width: 460px;
+  position: relative;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.form-split input {
+  display: inline-block;
+  width: 220px;
+  margin: 0;
+}
+.checkbox-list,
+.radio-list {
+  width: 460px;
+  position: relative;
+  display: block;
+  margin: 15px auto;
+}
+.checkbox-list {
+  padding-left: 20px;
+
+}
+.checkbox-list input {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.checkbox-list span {
+  display: block;
+  font-size: 14px;
+  color: #999;
+}
+.radio-list > * {
+  width: auto;
+  display: inline-block;
+  margin-right: 15px;
+}
+.menu-search {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  margin: 0 auto;
+  transition: all .4s ease;
+  z-index: 20;
+}
+.menu-search input {
+  margin: 0;
+  height: 44px;
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 200;
+}
+.menu-search * {
+  transition: all .4s ease;
+}
+.menu-search.fade > span {
+  transform: translateX(24px);
+}
+.menu-search.fade > input {
+  transform: translateX(10px);
+}
+.menu-search.fade > a {
+  transform: translateX(4px);
+}
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  transition: all .4s ease;
+}
+.menu-items a {
+  line-height: 44px;
+  color: white;
+  opacity: .8;
+  text-decoration: none;
+  transition: all .4s ease;
+}
+.menu-items.fade a {
+  transform: scale(.8);
+}
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-items a {
+  line-height: 46px;
+  color: white;
+  opacity: .8;
+  text-decoration: none;
+}
+.banner {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background: #111;
+  overflow: hidden;
+  position: relative;
+}
+.banner h1 {
+  text-align: center;
+  color: white;
+  margin-top: 120px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.color-block {
+  position: absolute;
+  display: block;
+  width: 400px;
+  height: 400px;
+  left: calc(50% - 200px);
+  top: -50px;
+  animation: colors 7s linear infinite;
+}
+.circle {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  filter: blur(140px);
+}
+.cl0 {
+  background: #c10101;
+  top: 0;
+  left: 20%;
+}
+.cl1 {
+  background: #0101c1;
+  top: 0;
+  right: 0;
+}
+.cl2 {
+  background: #c101c1;
+  left: 0;
+  bottom: 0;
+}
+.cl3 {
+  background: #c1c101;
+  right: 10%;
+  bottom: 0;
+}
+@keyframes colors {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+.icon {
+  background-position: 0 center;
+  height: 44px;
+  width: 20px;
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.icon_logo {
+  background-image: url('../img/globalnav_apple_image__b5er5ngrzxqq_large.svg');
+}
+.icon_search {
+  background-image:url('../img/globalnav_search_image__cbllq1gkias2_large.svg') ;
+  background-position: center 0;
+  background-size: 90% auto;
+  z-index: 10;
+}
+span.icon_search {
+  background-position: center 100%;
+}
+.icon_cart {
+  background-image: url('../img/globalnav_bag_image__yzte50i47ciu_large.svg') ;
+}
+.cross {
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 20px;
+  background: #aaa;
+  top: 12px;
+}
+.cross-1 {
+  transform: rotate(45deg);
+}
+.cross-2 {
+  transform: rotate(-45deg);
+}
+.black_screen {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all .6s ease;
+
+}
+.hidden {
+  display: none;
+}
+.fade {
+  opacity: 0;
+}

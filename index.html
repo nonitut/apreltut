@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{ссылка}">
+    <meta property="og:title" content="название">
+    <meta property="og:description" content="текст">
+    <meta property="og:image" content="{картинка}">
+    <title>Шаблон</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mailtoharshit/San-Francisco-Font-/sanfrancisco.css">
+      <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+      <script src="javascripts/jquery-3.6.0.js" charset="utf-8"></script>
+      <script src="javascripts/java-script.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="black_screen hidden fade">
+    </div>
+    <nav>
+      <div class="menu-items">
+        <a href="#" class="icon icon_logo"></a>
+        <a href="#">Mac</a>
+        <a href="#">iPad</a>
+        <a href="#">iPhone</a>
+        <a href="#">Watch</a>
+        <a href="#">TV</a>
+        <a href="#">Music</a>
+        <a href="#">Support</a>
+        <a href="#" class="icon icon_search"></a>
+        <a href="#" class="icon icon_cart"></a>
+      </div>
+
+      <div class="menu-search hidden fade">
+        <span class="icon icon_search"></span>
+        <input type="text" name="" value="" placeholder="Search apple.com">
+        <a href="#" class="icon icon_close">
+          <span class="cross cross-1"></span>
+          <span class="cross cross-2"></span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="banner">
+      <div class="color-block">
+        <div class="circle cl0"></div>
+        <div class="circle cl1"></div>
+        <div class="circle cl2"></div>
+        <div class="circle cl3"></div>
+      </div>
+      <h1>Create Your Apple ID</h1>
+    </div>
+
+
+    <form class="" action="index.html" method="post">
+      <p>One Apple ID is all you need to access all Apple services.
+Already have an Apple ID? <a href="#">Find it here</a></p>
+      <div class="form-split">
+        <input type="text" name="" value="" placeholder="First name">
+        <input type="text" name="" value="" placeholder="Last name">
+      </div>
+
+      <h3>COUNTRY / REGION</h3> <!--// у  эпла они юзают заголовок 3 уровня, повторяем -->
+      <select class="" name="">
+        <option value="">United States</option>
+        <option value="">Russia</option>
+        <option value="">Canada</option>
+        <option value="">France</option>
+        <option value="">Spain</option>
+      </select>
+
+      <input id="el" type="text" name="" value="" placeholder="Birthday">
+      <hr>
+
+
+      <input type="email" name="" value="" placeholder="name@example.com">
+
+      <span>This will be your new Apple ID.</span>
+
+      <input type="password" name="" value="" placeholder="Password">
+      <input type="password" name="" value="" placeholder="Confirm password">
+      <hr>
+
+
+      <select class="" name="">
+        <option value="">(+1) United States</option>
+        <option value="">(+7) Russia</option>
+      </select>
+
+      <input type="tel" name="" value="" placeholder="Phone number">
+
+      <span>Be sure to enter a phone number you can always access. It will be used to verify your identity any time you sign in on a new device or web browser. Messaging or data rates may apply.</span>
+      <div class="radio-list">
+        <p>Verify with:</p>
+        <div>
+          <input type="radio" name="phoneproof" value="">
+          <label for="">Text message</label>
+        </div>
+        <div>
+          <input type="radio" name="phoneproof" value=""><!-- пишем имя, условно, как вариант селекта -->
+          <label for="">Phone call</label> <!-- селект и радио кнопка это эллемент выбора и их минимум 2 -->
+        </div>
+      </div>
+
+
+      <hr>
+      <label class="checkbox-list" for=""><input type="checkbox" name="" value="">Announcements<span>Get announcements, recommendations, and updates about Apple products, services, and software.</span> </label>
+      <label class="checkbox-list" for=""><input type="checkbox" name="" value="">Apps, Music, TV, and More<span>Get new releases, exclusive content, special offers, and recommendations for apps, music, movies, TV, books, podcasts, Apple Pay, Apple Card and more.</span> </label>
+      <label class="checkbox-list" for=""><input type="checkbox" name="" value="">Apple News Newsletter<span>The best stories, picked by the Apple News editors, delivered right to your inbox.</span> </label>
+      <hr>
+      <p>Your Apple ID information is used to allow you to sign in securely and access your data. Apple records certain usage data for security, support, and reporting purposes. See how your data is managed.</p>
+
+      <button type="submit" name="button">Continue</button>
+    </form>
+
+  </body>
+</html>
